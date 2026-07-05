@@ -1,0 +1,38 @@
+{
+  "name": "security-camera",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "dev:https": "next dev --experimental-https",
+    "dev:server": "nodemon src/server/index.js",
+    "dev:all": "concurrently \"npm run dev\" \"npm run dev:server\"",
+    "dev:all:https": "concurrently \"npm run dev:https\" \"npm run dev:server\"",
+    "server": "node src/server/index.js",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint"
+  },
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "lucide-react": "^1.23.0",
+    "next": "16.2.10",
+    "react": "19.2.4",
+    "react-dom": "19.2.4",
+    "socket.io": "^4.8.3",
+    "socket.io-client": "^4.8.3"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "concurrently": "^10.0.3",
+    "eslint": "^9",
+    "eslint-config-next": "16.2.10",
+    "nodemon": "^3.1.14",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}
